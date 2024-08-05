@@ -1,0 +1,9 @@
+/MainPackage/
+/bll/
+/businesslogic/
+/dal/
+/dataacess/
+/dtos/
+/log4j2.xml
+/presentation/
+/utils/

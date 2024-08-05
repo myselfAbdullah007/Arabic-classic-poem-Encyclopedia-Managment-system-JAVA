@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project SCDProject with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Users/SURFACE/eclipse-workspace"/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/PoemManager.jar">
+            <manifest>
+                <attribute name="Main-Class" value="MainPackage.MainClass"/>
+                <attribute name="Class-Path" value=". PoemManager_lib/ADAT-Stemmer.v1.20180101.jar PoemManager_lib/mysql-connector-j-8.1.0.jar PoemManager_lib/Pos_tagger.jar PoemManager_lib/log4j-api-2.20.0.jar PoemManager_lib/log4j-core-2.20.0.jar PoemManager_lib/junit-jupiter-api_5.10.0.jar PoemManager_lib/junit-jupiter-engine_5.10.0.jar PoemManager_lib/junit-jupiter-migrationsupport_5.10.0.jar PoemManager_lib/junit-jupiter-params_5.10.0.jar PoemManager_lib/junit-platform-commons_1.10.0.jar PoemManager_lib/junit-platform-engine_1.10.0.jar PoemManager_lib/junit-platform-launcher_1.10.0.jar PoemManager_lib/junit-platform-runner_1.10.0.jar PoemManager_lib/junit-platform-suite-api_1.10.0.jar PoemManager_lib/junit-platform-suite-engine_1.10.0.jar PoemManager_lib/junit-platform-suite-commons_1.10.0.jar PoemManager_lib/junit-vintage-engine_5.10.0.jar PoemManager_lib/org.opentest4j_1.3.0.jar PoemManager_lib/org.apiguardian.api_1.1.2.jar PoemManager_lib/org.junit_4.13.2.v20230809-1000.jar PoemManager_lib/org.hamcrest_2.2.0.jar PoemManager_lib/org.hamcrest.core_2.2.0.v20230809-1000.jar PoemManager_lib/flatlaf-3.2.5.jar"/>
+            </manifest>
+            <fileset dir="C:/Users/SURFACE/Documents/GitHub/project-se3001-abc-coders/bin"/>
+        </jar>
+        <delete dir="${dir.jarfile}/PoemManager_lib"/>
+        <mkdir dir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/Documents/GitHub/project-se3001-abc-coders/ADAT-Stemmer.v1.20180101.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/Documents/GitHub/project-se3001-abc-coders/mysql-connector-j-8.1.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/Documents/GitHub/project-se3001-abc-coders/Pos_tagger.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/Downloads/apache-log4j-2.20.0-bin/apache-log4j-2.20.0-bin/log4j-api-2.20.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/Downloads/apache-log4j-2.20.0-bin/apache-log4j-2.20.0-bin/log4j-core-2.20.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-jupiter-api_5.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-jupiter-engine_5.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-jupiter-migrationsupport_5.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-jupiter-params_5.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-commons_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-engine_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-launcher_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-runner_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-suite-api_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-suite-engine_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-platform-suite-commons_1.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/junit-vintage-engine_5.10.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/org.opentest4j_1.3.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/org.apiguardian.api_1.1.2.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/org.junit_4.13.2.v20230809-1000.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/org.hamcrest_2.2.0.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/.p2/pool/plugins/org.hamcrest.core_2.2.0.v20230809-1000.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+        <copy file="C:/Users/SURFACE/Documents/GitHub/project-se3001-abc-coders/flatlaf-3.2.5.jar" todir="${dir.jarfile}/PoemManager_lib"/>
+    </target>
+</project>

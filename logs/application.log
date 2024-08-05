@@ -1,0 +1,2 @@
+2023-11-26 19:12:28,395 INFO o.a.l.l.s.LoggerAdapter [main] Connected to the database
+2023-11-26 19:12:36,527 INFO o.a.l.l.s.LoggerAdapter [AWT-EventQueue-0] Database connection closed.
